@@ -1,0 +1,485 @@
+/*
+  Developer: Joel Rudsberg
+  Email: rudsberg@live.se
+*/
+
+// My custom bootstrap variables
+@import "variables";
+
+// Bootstrap imports
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/images";
+@import "../node_modules/bootstrap/scss/code";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/tables";
+// @import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+// @import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+// @import "../node_modules/bootstrap/scss/button-group";
+// @import "../node_modules/bootstrap/scss/input-group";
+// @import "../node_modules/bootstrap/scss/custom-forms";
+// @import "../node_modules/bootstrap/scss/nav";
+// @import "../node_modules/bootstrap/scss/navbar";
+// @import "../node_modules/bootstrap/scss/card";
+// @import "../node_modules/bootstrap/scss/breadcrumb";
+@import "../node_modules/bootstrap/scss/pagination";
+// @import "../node_modules/bootstrap/scss/badge";
+// @import "../node_modules/bootstrap/scss/jumbotron";
+// @import "../node_modules/bootstrap/scss/alert";
+@import "../node_modules/bootstrap/scss/progress";
+@import "../node_modules/bootstrap/scss/media";
+// @import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close";
+// @import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/tooltip";
+@import "../node_modules/bootstrap/scss/popover";
+// @import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/utilities";
+@import "../node_modules/bootstrap/scss/print";
+
+
+// ========================================================== //
+
+
+
+// My custom styles
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a button {
+  cursor: pointer;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+a[data-tool-tip] {
+  position: relative;
+}
+
+a[data-tool-tip]::after {
+  content: attr(data-tool-tip);
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: -40px;
+  background-color: $footer-color;
+  white-space: nowrap;
+  font-size: 0.75em;
+  padding: 6px 8px;
+  color: white;
+  border-radius: 7px;
+  transform: scale(0);
+  transition: transform ease-out 150ms,
+              bottom ease-out 150ms;
+}
+
+a[data-tool-tip]:hover::after {
+  transform: scale(1);
+  bottom: 100%;
+}
+
+button {
+  border-radius: 20px !important;
+  border-width: 2px !important;
+  font-weight: 500 !important;
+  &:hover {
+    transition: all ease-in-out 350ms !important;
+    transform: scaleX(1.15) !important;
+    cursor: pointer;
+  }
+}
+
+.info-header {
+  min-width: 280px;
+  max-width: 520px;
+  margin: auto;
+  margin-top: 15px;
+  border-bottom: 1px #ddd solid;
+}
+
+.info-header h2 {
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+.info-header p {
+  font-weight: 300;
+}
+
+.disabled:hover {
+  cursor: default;
+  transition: none !important;
+  transform: none !important;
+  background-color: inherit !important;
+  border-color: $button-color !important;
+  color: black !important;
+}
+
+/* ==================== HERO SECTION ==================== */
+
+#hero-section {
+  background-image: url("../img/desktop-reduced.jpg");
+  background-repeat: no-repeat;
+  /*
+  background-size: cover;
+  background-attachment: fixed;
+  */
+  background-attachment: scroll;
+  min-height: 100vh;
+
+  button {
+    border-color: $button-color;
+    color: white;
+    &:hover {
+      color: black !important;
+      background-color: $button-color;
+    }
+  }
+  .dark-overlay {
+    background-color: rgba(0, 0, 0, 0.45);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+  }
+  .col {
+    max-width: 650px;
+    position: relative;
+    top: -40px;
+  }
+  .col-sm-12 {
+    max-width: 650px;
+    position: relative;
+    top: -40px;
+  }
+  img {
+    width: 200px;
+    &:hover {
+      transform: scale(1.1);
+      transition: transform ease-out 200ms;
+    }
+  }
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+  span, a {
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+}
+
+/* ================== Project Section ====================== */
+
+#project-section {
+  background-color: $primary-color;
+
+  blockquote::before {
+    content: open-quote;
+    font-size: 1.4em;
+  }
+  blockquote::after {
+    content: close-quote;
+    font-size: 1.4em;
+  }
+  .info-header {
+    a {
+      border-bottom: 1px #4288DC dotted;
+      font-weight: 400;
+      &:hover {
+        color: $button-color;
+        text-decoration: none;
+        border-bottom: 1px $button-color dotted;
+        transition: all ease-in-out 400ms;
+      }
+    }
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  button {
+    border-color: $button-color;
+    color: $footer-color;
+    font-size: 1rem;
+    font-weight: 500;
+    &:hover {
+      color: $button-color;
+      background-color: $footer-color;
+      border-color: $footer-color;
+    }
+  }
+  .project-text {
+    max-width: 430px;
+  }
+  .project {
+    box-shadow: 0px 24px 3px -24px #ddd;
+  }
+  .testimony:not(.last-testimony) {
+    box-shadow: 0px 24px 3px -24px #ddd;
+  }
+  .testimony blockquote {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #testimony {
+    box-shadow: none !important;
+  }
+  .testimony img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* ================== Personal Projects Section ====================== */
+
+#pp-section {
+  background-color: $secondary-color;
+
+  .info-header {
+    a {
+      border-bottom: 1px #4288DC dotted;
+      font-weight: 400;
+      position: relative;
+      &:hover {
+        color: $footer-color;
+        text-decoration: none;
+        border-bottom: 1px $footer-color dotted;
+        transition: all ease-in-out 150ms;
+      }
+    }
+  }
+  button {
+    border-color: $button-color;
+    color: $footer-color;
+    font-size: 1rem;
+    font-weight: 500;
+    &:hover {
+      color: $button-color;
+      background-color: $footer-color;
+      border-color: $footer-color;
+    }
+  }
+  a:hover {
+    text-decoration: none !important;
+  }
+  .row {
+    position: relative;
+    .col-md-4 {
+      position: relative;
+    }
+    p {
+      margin-bottom: 60px;
+    }
+    a {
+      position: absolute;
+      display: block;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+  }
+  .row .col-sm-6 {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  .holder {
+    margin: 0 auto;
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+  }
+  .background {
+    width: 230px;
+    height: 230px;
+    border-radius: 10px;
+    position: relative;
+  }
+  .layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+  }
+  #todo-background {
+    background: url('../img/todo.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #todo-layer {
+    background-color: rgba(37, 42, 48, 0.7);
+  }
+  #particle-background {
+    background: url('../img/canvas.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #particle-layer {
+    background-color: rgba(95, 146, 203, 0.7);
+  }
+  #schack-background {
+    background: url('../img/schack.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #schack-layer {
+    background-color: rgba(206, 110, 85, 0.7);
+  }
+  #wind-background {
+    background: url('../img/windtunnel.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  #wind-layer {
+    background-color: rgba(92, 192, 145, 0.7);
+  }
+  #wind .title {
+    font-size: 1.25rem;
+  }
+  button {
+    max-width: 260px;
+    margin: 0 auto;
+  }
+  .title {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    font-weight: 500;
+  }
+}
+
+/* ================== Skills Section ====================== */
+
+#star-text {
+  font-size: 0.65rem;
+}
+
+#skills-section {
+  background-color: $primary-color;
+}
+
+/* ================== Contact Section ====================== */
+
+#contact-section {
+  background-color: $contact-color;
+
+  .info-header {
+    min-width: 280px;
+    max-width: 600;
+    margin: auto;
+    border-bottom: none;
+    h2 {
+      font-size: 2.6rem;
+      font-weight: 600;
+    }
+    button {
+      color: #252A30;
+      border-color: #252A30;
+      width: 170px;
+      &:hover {
+        background-color: #252A30;
+        color: #FED766;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+/* ================== Footer Section ====================== */
+
+#footer-section {
+  background-color: $footer-color;
+  .row .d-flex {
+    max-width: 120px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  i {
+    color: #A6A8AA;
+    &:hover {
+      color: white;
+      transition: all ease-in-out 300ms;
+      transform: scale(1.1);
+    }
+  }
+}
+
+@media (min-width: 400px) {
+  .info-header h2 {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: 576px) {
+  #hero-section {
+    h1 {
+      font-size: 1.65rem;
+      font-weight: 600;
+      line-height: 1.35;
+    }
+    span, a {
+      font-size: 1.35rem;
+      font-weight: 500;
+      line-height: 1.35;
+    }
+    img {
+      width: 240px;
+    }
+  }
+  #contact-section .info-header {
+    max-width: 630px;
+  }
+}
+
+@media (min-width: 768px) {
+  #project-section {
+    #project-tintin {
+      margin-right: auto;
+      margin-left: initial;
+    }
+    #project-dani {
+      margin-left: auto;
+      margin-right: initial;
+    }
+    .project-text p, .project-text h3, .project-text a {
+      text-align: left;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  #hero-section {
+    background-size: cover;
+    background-attachment: fixed;
+    .col {
+      top: -40px;
+    }
+    .dark-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+  #pp-section .title {
+    font-size: 1.38rem;
+  }
+}
+
+@media (min-width: 1200px) {}
