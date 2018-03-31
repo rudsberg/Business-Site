@@ -105,7 +105,20 @@ button {
   max-width: 520px;
   margin: auto;
   margin-top: 15px;
-  border-bottom: 1px #ddd solid;
+  p {
+    position: relative;
+  }
+  p::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 210px;
+    right: 0;
+    height: 2px;
+    width: 100px;
+    background-color: $button-color;
+  }
 }
 
 .info-header h2 {
@@ -147,7 +160,7 @@ button {
     }
   }
   .dark-overlay {
-    background-color: rgba(0, 0, 0, 0.45);
+    background-color: rgba(0, 0, 0, 0.65);
     position: absolute;
     top: 0;
     left: 0;
@@ -164,29 +177,47 @@ button {
     position: relative;
     top: -40px;
   }
-  img {
-    width: 200px;
-    &:hover {
-      transform: scale(1.1);
-      transition: transform ease-out 200ms;
-    }
-  }
   h1 {
-    font-size: 1.4rem;
+    font-size: 3rem !important;
     font-weight: 600;
     line-height: 1.35;
   }
-  span, a {
+   a {
     font-size: 1.15rem;
     font-weight: 500;
     line-height: 1.35;
   }
+  h2 {
+    line-height: 1.5;
+  }
+}
+
+/* ================= Service Section ====================== */
+#service-section {
+  background-color: $primary-color;
+
+  .service-item {
+    background-color: $subtle-white;
+    max-width: 360px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 18px 8px 5px 8px;
+    border-radius: 8px;
+    box-shadow: 7px 7px 15px -10px #a59f9f;
+  }
+
+  /*
+  .project {
+    box-shadow: 0px 24px 3px -24px #ddd;
+  }
+  */
+
 }
 
 /* ================== Project Section ====================== */
 
 #project-section {
-  background-color: $primary-color;
+  background-color: $secondary-color;
 
   blockquote::before {
     content: open-quote;
@@ -250,6 +281,7 @@ button {
 #pp-section {
   background-color: $secondary-color;
 
+  /*
   .info-header {
     a {
       border-bottom: 1px #4288DC dotted;
@@ -263,6 +295,7 @@ button {
       }
     }
   }
+  */
   button {
     border-color: $button-color;
     color: $footer-color;
@@ -474,7 +507,7 @@ button {
       top: -40px;
     }
     .dark-overlay {
-      background-color: rgba(0, 0, 0, 0.4);
+      background-color: rgba(0, 0, 0, 0.65);
     }
   }
   #pp-section .title {

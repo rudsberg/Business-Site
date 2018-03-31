@@ -13,24 +13,52 @@
   <title>Joel Rudsberg | Programmerare</title>
   <!-- Font Awesome -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
-  <!-- Montserrat Google Font -->
+  <!-- -Montserrat Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
 </head>
 
 <body>
+
   <!-- HERO SECTION -->
   <section id="hero-section">
     <div class="dark-overlay d-flex justify-content-center align-items-center">
       <div class="legend-inner pt-4">
         <div class="container">
           <div class="row">
-            <div class="col-sm-12 text-center text-white">
-              <img src="img/joel-rudsberg-profilbild.jpg" alt="Joel Rudsberg profilbild headshot" class="img-fluid rounded-circle mb-3" id="profilbild">
-              <h1 class="mb-3 display-4">Hej, jag bygger hemsidor och annat spännande.<span class="lead d-block mt-2">Jag letar internship sommaren 2018 i Göteborg.</span></h1>
-              <a href="#contact-section"><button class="btn btn-outline-info btn-lg text-white">Kontakta mig</button></a>
+            <div class="col-sm-12 text-left text-white">
+              <h1 class="mb-3">Frilansande Webbutvecklare</h1>
+              <h2 class="mt-4 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, repellat?</h2>
+              <a class="mt-4" href="#contact-section"><button class="btn btn-outline-info btn-lg text-white mt-4">Anlita mig</button></a>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICE SECTION -->
+  <section id="service-section" class="pb-4">
+    <div class="container">
+      <div class="info-header mb-5 text-center">
+        <h2 class="text-center display-4 d-block pt-5">Tjänster</h2>
+        <p class="mt-4 mb-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quibusdam architecto et, molestiae labore consectetur praesentium tempora quos iste quia enim alias rerum, laborum vel.</p>
+      </div>
+      <div class="row mt-5 pt-4">
+        <div class="service-item col-sm-6 col-md-4 text-center mb-5">
+          <i class="fa fa-github fa-4x mb-2"></i>
+          <h2 class="mb-2">Wordpress</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium rem, consectetur distinctio minus, hic minima animi. Est accusantium, placeat!</p>
+        </div>
+        <div class="service-item col-sm-6 col-md-4 text-center mb-5">
+          <i class="fa fa-twitter fa-4x mb-2"></i>
+          <h2 class="mb-2">Wordpress</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium rem, consectetur distinctio minus, hic minima animi. Est accusantium, placeat!</p>
+        </div>
+        <div class="service-item col-sm-6 col-md-4 text-center mb-5">
+          <i class="fa fa-rocket fa-4x mb-2"></i>
+          <h2 class="mb-2">Hjälpa byråer</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium rem, consectetur distinctio minus, hic minima animi. Est accusantium, placeat!</p>
         </div>
       </div>
     </div>
@@ -41,7 +69,7 @@
     <div class="container">
       <div class="info-header mb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Tidigare Arbeten</h2>
-        <p class="mt-4 text-center">En kollektion av projekt jag jobbat med där slutprodukten dagligen används av företag.</p>
+        <p class="mt-4 text-center">En kollektion av projekt jag jobbat med där slutprodukten dagligen används av företag. Vill ni se mer exempel är ni hjärtligt välkomna att <a href="mailto:rudsberg@live.se" data-tool-tip="Svarar inom en dag!">emaila</a> mig.</p>
       </div>
       <div class="row project pb-5 mt-5">
         <div class="col-md-6 order-md-2">
@@ -96,64 +124,13 @@
     </div>
   </section>
 
-  <!-- PERSONAL PROJECT SECTION -->
-  <section id="pp-section">
-    <div class="container">
-      <div class="info-header mb-5 text-center">
-        <h2 class="text-center display-4 d-block pt-5">Personliga Projekt</h2>
-        <p class="mt-4 mb-3 text-center">När jag inte jobbar åt någon kund eller pluggar lär jag mig nya programmeringsspråk och teknologier genom att bygga projekt. Vill ni se mer exempel är ni hjärtligt välkomna att <a href="mailto:rudsberg@live.se" data-tool-tip="Svarar inom en dag!">emaila</a> mig.</p>
-      </div>
-      <div class="row">
-        <div class="col-md-4 col-sm-6 text-center mb-5">
-          <div class="holder mb-3">
-            <div id="todo-background" class="background">
-              <div id="todo-layer" class="layer"></div>
-            </div>
-          </div>
-          <div class="title text-white">To-Do Applikation</div>
-          <p class="text-muted">En simpel applikation byggd med vanilla JavaScript som är designad för mobilanvändare. Jag använde mig av the module pattern. Localstorage används också för att lagra och hämta data.</p>
-          <a href="projects/todo/index.html" target="_blank"><button class="btn btn-block btn-lg btn-outline-info mt-3">Testa</button></a>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center mb-5">
-          <div class="holder mb-3">
-            <div id="particle-background" class="background">
-              <div id="particle-layer" class="layer"></div>
-            </div>
-          </div>
-          <div class="title text-white">Partikelsimulation</div>
-          <p class="text-muted">En partikelsimulation byggd med HTML5 canvas element och vanilla JavaScript. I programmet används kollisionsdetektion och kollisioner och gravitation simuleras. Tryck på mellanslag för inställningar.</p>
-          <a href="projects/particles/index.html" target="_blank"><button class="btn btn-block btn-lg btn-outline-info mt-3">Testa</button></a>
-        </div>
-        <div class="col-md-4 col-sm-6 text-center mb-5">
-          <div class="holder mb-3">
-            <div id="schack-background" class="background">
-              <div id="schack-layer" class="layer"></div>
-            </div>
-          </div>
-          <div class="title text-white">Schack</div>
-          <p class="text-muted">Ett fullständigt schackspel byggd med Java och med en objektorienterad approach. Utvecklingen av GUI gjordes med JavaFX. Jag programmerade spelet när jag studerade software engineering i USA.</p>
-          <a href="projects/particles/index.html" target="_blank" class="disabled button-anchor"><button class="btn btn-block btn-lg btn-outline-info mt-3 disabled" title="Kan ej visa exemplet här" disabled>Testa</button></a>
-        </div>
-        <div id="wind" class="col-md-4 col-sm-6 text-center mb-5">
-          <div class="holder mb-3">
-            <div id="wind-background" class="background">
-              <div id="wind-layer" class="layer"></div>
-            </div>
-          </div>
-          <div class="title text-white">Aerodynamisk Analys</div>
-          <p class="text-muted">Ett analyseringsprogram byggt i Matlab som med data från ett vindtunneltest producerar en simulering av den foil som användes, genererar en tryckkoefficientgraf och visar i vilken angel of attack som ger maximal lyftkraft.</p>
-          <a href="projects/particles/index.html" target="_blank" class="disabled button-anchor"><button class="btn btn-block btn-lg btn-outline-info mt-3 disabled" title="Kan ej visa exemplet här" disabled>Testa</button></a>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- SKILLS SECTION -->
+  <!--
   <section id="skills-section" class="pb-5">
     <div class="container">
       <div class="info-header mb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Färdigheter</h2>
-        <p id="subtext" class="mt-4 mb-3 text-center">Vilka språk kan jag? Vilka frameworks kan jag? Vilka andra teknologier kan jag? Hur mycket kan jag i vardera delar? Här ger jag ett visuellt svar.</p>
+        <p id="subtext" class="mt-4 mb-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit distinctio culpa fugit, molestiae nobis vel alias omnis magni maiores obcaecati, laborum laboriosam quae. Fuga, cumque.</p>
       </div>
       <div class="row mb-3">
         <div class="col text-center">
@@ -169,70 +146,40 @@
       </div>
       <div class="row">
 
-        <div class="col-md-6">
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">HTML/CSS</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="lead mb-2 text-center">Front-end</div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+              </div>
+              <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe reiciendis tenetur, fugiat illo aperiam reprehenderit tempore, amet ducimus debitis nihil quia labore eaque voluptatum unde aut excepturi nam quod alias beatae perferendis vitae quo porro.</p>
             </div>
           </div>
 
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">JavaScript</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="lead mb-2 text-center">Back-end</div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
+              </div>
             </div>
           </div>
 
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">Bootstrap 4</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="lead mb-2 text-center">Wordpress</div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+              </div>
             </div>
           </div>
 
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">SASS</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">Androidutveckling</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="col-md-6">
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">PHP</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 10%"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">Java</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">Matlab</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 45%"></div>
-            </div>
-          </div>
-
-          <div class="skill mb-4">
-            <div class="lead mb-2 text-center">Git/Github Workflow</div>
-            <div class="progress" style="height: 15px">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 35%"></div>
+          <div class="col-md-6">
+            <div class="skill mb-4">
+              <div class="lead mb-2 text-center">Kundsupport</div>
+              <div class="progress" style="height: 15px">
+                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
+              </div>
             </div>
           </div>
 
@@ -240,14 +187,27 @@
       </div>
     </div>
   </section>
+-->
+
+<!-- SERVICE SECTION -->
+<section id="about-section" class="pb-4">
+  <div class="container">
+    <div class="info-header mb-5 text-center">
+      <h2 class="text-center display-4 d-block pt-5">Om mig</h2>
+    </div>
+    <div class="row mt-5 pt-4">
+      <h1>Jag är Joel!</h1>
+    </div>
+  </div>
+</section>
 
   <!-- CONTACT SECTION -->
   <section id="contact-section" class="pt-4">
     <div class="container">
       <div class="info-header pb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Kontakta Mig</h2>
-        <p id="subtext" class="mt-4 mb-3 text-center lead">Behöver ni en Chalmerist som IT intern sommaren 2018?</p>
-        <p class="lead text-center">Jag gör även frilansarbete. Berätta om dina projekt och idéer!</p>
+        <p id="subtext" class="mt-4 mb-3 text-center lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime esse, maiores doloribus.</p>
+        <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, officiis!</p>
         <a href="mailto:rudsberg@live.se"><button class="mt-2 btn btn-lg btn-outline-success mb-3">Maila</button></a>
       </div>
     </div>
