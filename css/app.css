@@ -4705,9 +4705,10 @@ button {
     content: '';
     display: block;
     position: absolute;
-    bottom: -30px;
-    left: 210px;
+    left: 0;
     right: 0;
+    margin: auto;
+    bottom: -30px;
     height: 2px;
     width: 100px;
     background-color: #FED766; }
@@ -4771,12 +4772,7 @@ button {
 
 /* ================= Service Section ====================== */
 #service-section {
-  background-color: #FFF;
-  /*
-  .project {
-    box-shadow: 0px 24px 3px -24px #ddd;
-  }
-  */ }
+  background-color: #FFF; }
   #service-section .service-item {
     background-color: #fcf9f9;
     max-width: 360px;
@@ -4995,7 +4991,10 @@ button {
     margin-left: auto;
     margin-right: initial; }
   #project-section .project-text p, #project-section .project-text h3, #project-section .project-text a {
-    text-align: left; } }
+    text-align: left; }
+
+  .service-item {
+    max-width: 330px !important; } }
 @media (min-width: 992px) {
   #hero-section {
     background-size: cover;
