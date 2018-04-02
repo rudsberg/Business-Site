@@ -4751,6 +4751,21 @@ button {
     left: 0;
     width: 100%;
     min-height: 100vh; }
+  #hero-section .row {
+    position: relative; }
+  #hero-section .learn-more {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 15px; }
+    #hero-section .learn-more p {
+      margin-bottom: 3px !important;
+      color: #eee !important; }
+    #hero-section .learn-more a:hover {
+      text-decoration: none; }
+    #hero-section .learn-more i {
+      color: #FED766; }
   #hero-section .col {
     max-width: 650px;
     position: relative;
@@ -4760,7 +4775,7 @@ button {
     position: relative;
     top: -40px; }
   #hero-section h1 {
-    font-size: 3rem !important;
+    font-size: 2.2rem !important;
     font-weight: 600;
     line-height: 1.35; }
   #hero-section a {
@@ -4768,7 +4783,8 @@ button {
     font-weight: 500;
     line-height: 1.35; }
   #hero-section h2 {
-    line-height: 1.5; }
+    line-height: 1.5;
+    font-size: 1.1rem; }
 
 /* ================= Service Section ====================== */
 #service-section {
@@ -4781,6 +4797,8 @@ button {
     padding: 18px 8px 5px 8px;
     border-radius: 8px;
     box-shadow: 7px 7px 15px -10px #a59f9f; }
+    #service-section .service-item h2 {
+      font-size: 1.5rem; }
 
 /* ================== Project Section ====================== */
 #project-section {
@@ -4826,111 +4844,23 @@ button {
     width: 70px;
     height: 70px; }
 
-/* ================== Personal Projects Section ====================== */
-#pp-section {
-  background-color: #EEE;
-  /*
-  .info-header {
-    a {
-      border-bottom: 1px #4288DC dotted;
-      font-weight: 400;
-      position: relative;
-      &:hover {
-        color: $footer-color;
-        text-decoration: none;
-        border-bottom: 1px $footer-color dotted;
-        transition: all ease-in-out 150ms;
-      }
-    }
-  }
-  */ }
-  #pp-section button {
-    border-color: #FED766;
-    color: #252A30;
-    font-size: 1rem;
-    font-weight: 500; }
-    #pp-section button:hover {
-      color: #FED766;
-      background-color: #252A30;
-      border-color: #252A30; }
-  #pp-section a:hover {
-    text-decoration: none !important; }
-  #pp-section .row {
-    position: relative; }
-    #pp-section .row .col-md-4 {
-      position: relative; }
-    #pp-section .row p {
-      margin-bottom: 60px; }
-    #pp-section .row a {
-      position: absolute;
-      display: block;
-      bottom: 0;
-      left: 0;
-      right: 0; }
-  #pp-section .row .col-sm-6 {
-    max-width: 300px;
-    margin: 0 auto; }
-  #pp-section .holder {
-    margin: 0 auto;
-    width: 230px;
-    height: 230px;
-    border-radius: 10px; }
-  #pp-section .background {
-    width: 230px;
-    height: 230px;
-    border-radius: 10px;
-    position: relative; }
-  #pp-section .layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px; }
-  #pp-section #todo-background {
-    background: url("../img/todo.PNG");
-    background-size: 100%;
-    background-repeat: no-repeat; }
-  #pp-section #todo-layer {
-    background-color: rgba(37, 42, 48, 0.7); }
-  #pp-section #particle-background {
-    background: url("../img/canvas.PNG");
-    background-size: 100%;
-    background-repeat: no-repeat; }
-  #pp-section #particle-layer {
-    background-color: rgba(95, 146, 203, 0.7); }
-  #pp-section #schack-background {
-    background: url("../img/schack.PNG");
-    background-size: 100%;
-    background-repeat: no-repeat; }
-  #pp-section #schack-layer {
-    background-color: rgba(206, 110, 85, 0.7); }
-  #pp-section #wind-background {
-    background: url("../img/windtunnel.jpg");
-    background-size: 100%;
-    background-repeat: no-repeat; }
-  #pp-section #wind-layer {
-    background-color: rgba(92, 192, 145, 0.7); }
-  #pp-section #wind .title {
-    font-size: 1.25rem; }
-  #pp-section button {
-    max-width: 260px;
-    margin: 0 auto; }
-  #pp-section .title {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    font-weight: 500; }
-
-/* ================== Skills Section ====================== */
-#star-text {
-  font-size: 0.65rem; }
-
-#skills-section {
-  background-color: #FFF; }
+/* ================== About Section ====================== */
+#about-section img {
+  max-width: 280px; }
+#about-section .profile-container {
+  margin: 0 auto !important; }
+#about-section .col-lg-4 {
+  text-align: center; }
+#about-section .about-info {
+  margin-bottom: 30px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto; }
+  #about-section .about-info h2 {
+    font-size: 1.5rem;
+    text-align: center; }
+  #about-section .about-info p {
+    text-align: center; }
 
 /* ================== Contact Section ====================== */
 #contact-section {
@@ -4971,18 +4901,21 @@ button {
     font-size: 2.4rem; } }
 @media (min-width: 576px) {
   #hero-section h1 {
-    font-size: 1.65rem;
+    font-size: 3rem;
     font-weight: 600;
     line-height: 1.35; }
-  #hero-section span, #hero-section a {
+  #hero-section h2 {
+    font-size: 1.35rem; }
+  #hero-section a {
     font-size: 1.35rem;
     font-weight: 500;
     line-height: 1.35; }
-  #hero-section img {
-    width: 240px; }
 
   #contact-section .info-header {
-    max-width: 630px; } }
+    max-width: 630px; }
+
+  #about-section .about-info {
+    max-width: 400px; } }
 @media (min-width: 768px) {
   #project-section #project-tintin {
     margin-right: auto;
@@ -4994,7 +4927,12 @@ button {
     text-align: left; }
 
   .service-item {
-    max-width: 330px !important; } }
+    max-width: 330px !important; }
+
+  #about-section .about-info h2 {
+    text-align: left; }
+  #about-section .about-info p {
+    text-align: left; } }
 @media (min-width: 992px) {
   #hero-section {
     background-size: cover;
@@ -5005,6 +4943,10 @@ button {
       background-color: rgba(0, 0, 0, 0.65); }
 
   #pp-section .title {
-    font-size: 1.38rem; } }
+    font-size: 1.38rem; }
+
+  #about-section img {
+    margin-top: 40px;
+    max-width: 340px; } }
 
 /*# sourceMappingURL=app.css.map */

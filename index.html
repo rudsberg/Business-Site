@@ -16,6 +16,11 @@
   <!-- -Montserrat Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
+  <!--Teletype-->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="js/jquery.teletype.js"></script>
+  <script src="js\teletype.impl.js"></script>
+
 </head>
 
 <body>
@@ -27,13 +32,18 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-left text-white">
-              <h1 class="mb-3">Frilansande Webbutvecklare</h1>
-              <h2 class="mt-4 lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, repellat?</h2>
+              <h1 class="mb-3">Hej! Jag designar och bygger <span class="type-text d-block"></span></h1>
+              <h2 class="mt-4 lead">Jag är en frilansande webbutvecklare baserad i Göteborg som skapar skräddarsydda hemsidor och webbapplikationer åt företag.</h2>
               <a class="mt-4" href="#contact-section"><button class="btn btn-outline-info btn-lg text-white mt-4">Anlita mig</button></a>
             </div>
+
           </div>
         </div>
       </div>
+    </div>
+    <div class="learn-more text-center text-white d-block w-100">
+      <p>Läs om vad jag kan erbjuda</p>
+      <a href="#service-section"><i class="fa fa-chevron-down d-block"></i></a>
     </div>
   </section>
 
@@ -42,24 +52,44 @@
     <div class="container">
       <div class="info-header mb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Tjänster</h2>
-        <p class="mt-4 mb-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta quibusdam architecto et, molestiae labore consectetur praesentium tempora quos iste quia enim alias rerum, laborum vel.</p>
+        <p class="mt-4 mb-3 text-center">Jag erbjuder hemsidor som är anpassade för alla enheter, utvecklade med de nyaste webbstandarderna och rankar högt på sökmotorerna. Allt ifrån simpla hemsidor till mer komplicerade webbbutiker erbjuds.</p>
       </div>
       <div class="row mt-5 pt-4">
-        <div class="service-item col-lg-4 col-md-6 text-center mb-5">
+        <div class="service-item col-md-6 offset-lg-3 text-center mb-5">
           <i class="fa fa-github fa-4x mb-2"></i>
-          <h2 class="mb-2">Wordpress</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium rem, consectetur distinctio minus, hic minima animi. Est accusantium, placeat!</p>
+          <h2 class="mb-2">Wordpressutveckling</h2>
+          <p>
+            <!--
+            Med hjälp av världerns största innehållshanteringssystem designar jag er framtida webbplats. Wordpress gör det möjligt att på egen hand, utan att nudda någon källkod, hantera all sorts innehåll på hemsidan. Behöver du hjälp att förnya funktionalitet på din nuvarande Wordpresshemsida kan även detta genomföras.
+            -->
+            Wordpress gör det möjligt att för dig som kund, utan att nudda källkoden, hantera och underhålla all sorts innehåll på hemsidan.
+          </p>
         </div>
-        <div class="service-item col-lg-4 col-md-6 text-center mb-5">
-          <i class="fa fa-twitter fa-4x mb-2"></i>
-          <h2 class="mb-2">Wordpress</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium rem, consectetur distinctio minus, hic minima animi. Est accusantium, placeat!</p>
-        </div>
-        <div class="service-item col-lg-4 col-md-6 text-center mb-5">
+        <div class="service-item col-md-6 text-center mb-5">
           <i class="fa fa-rocket fa-4x mb-2"></i>
-          <h2 class="mb-2">Hjälpa byråer</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni praesentium rem, consectetur distinctio minus, hic minima animi. Est accusantium, placeat!</p>
+          <h2 class="mb-2">Responsivitet</h2>
+          <p>
+            Sidan tillverkas så att designen, oavsett om en smartphone, tablet eller en laptop används,  aktivt ändras utifrån användarens enhet.
+          </p>
         </div>
+      </div>
+      <div class="row">
+        <div class="service-item col-md-6 text-center mb-5">
+          <i class="fa fa-twitter fa-4x mb-2"></i>
+          <h2 class="mb-2">Sökoptimering</h2>
+          <p>
+            Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på Google.
+          </p>
+        </div>
+
+        <div class="service-item col-md-6 text-center mb-5">
+          <i class="fa fa-twitter fa-4x mb-2"></i>
+          <h2 class="mb-2">Sökoptimering</h2>
+          <p>
+            Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på Google.
+          </p>
+        </div>
+
       </div>
     </div>
   </section>
@@ -99,7 +129,7 @@
       <div class="row project pb-5 mt-5">
         <div class="col-md-6 order-md-1">
           <div class="d-flex h-100 w-100 flex-column justify-content-center">
-            <img class="mb-3 img-fluid mx-auto" src="img/okay-mockup-transparent.jpg" alt="Responsiv och mobilanpassad hemsida av okay shops hemsida.">
+            <img class="mb-3 img-fluid mx-auto" src="img/mockup-okayshop-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av okay shops hemsida.">
           </div>
         </div>
         <div class="col-md-6 order-md-2">
@@ -124,79 +154,39 @@
     </div>
   </section>
 
-  <!-- SKILLS SECTION -->
-  <!--
-  <section id="skills-section" class="pb-5">
-    <div class="container">
-      <div class="info-header mb-5 text-center">
-        <h2 class="text-center display-4 d-block pt-5">Färdigheter</h2>
-        <p id="subtext" class="mt-4 mb-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit distinctio culpa fugit, molestiae nobis vel alias omnis magni maiores obcaecati, laborum laboriosam quae. Fuga, cumque.</p>
-      </div>
-      <div class="row mb-3">
-        <div class="col text-center">
-          <p class="lead">Så här fungerar graderingen:</p>
-          <div class="progress" style="height: 25px">
-            <div class="progress-bar bg-danger" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">Nybörjare</div>
-            <div class="progress-bar bg-warning" role="progressbar" style="width: 25%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Cool</div>
-            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">Ninja</div>
-            <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">Rockstjärna*</div>
-          </div>
-          <p id="star-text" class="text-muted text-center mt-2">*Självutnämnd</p>
-        </div>
-      </div>
-      <div class="row">
-
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="lead mb-2 text-center">Front-end</div>
-              <div class="progress" style="height: 15px">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-              </div>
-              <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe reiciendis tenetur, fugiat illo aperiam reprehenderit tempore, amet ducimus debitis nihil quia labore eaque voluptatum unde aut excepturi nam quod alias beatae perferendis vitae quo porro.</p>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="lead mb-2 text-center">Back-end</div>
-              <div class="progress" style="height: 15px">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="lead mb-2 text-center">Wordpress</div>
-              <div class="progress" style="height: 15px">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="skill mb-4">
-              <div class="lead mb-2 text-center">Kundsupport</div>
-              <div class="progress" style="height: 15px">
-                <div class="progress-bar progress-bar-striped progress-bar-animated bg-info" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100" style="width: 55%"></div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </div>
-  </section>
--->
-
 <!-- SERVICE SECTION -->
 <section id="about-section" class="pb-4">
   <div class="container">
     <div class="info-header mb-5 text-center">
       <h2 class="text-center display-4 d-block pt-5">Om mig</h2>
+      <p class="mb-5"></p>
     </div>
-    <div class="row mt-5 pt-4">
-      <h1>Jag är Joel!</h1>
+    <div class="row mt-4">
+      <div class="col-md-6 mb-5">
+        <div class="profile-container text-center">
+          <img src="img\joel-rudsberg-profilbild.jpg" alt="" class="img-fluid rounded-circle">
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="about-info">
+          <h2>Bakgrund</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laborum repudiandae esse. Delectus eligendi natus maxime iusto optio. Ullam exercitationem molestias in amet doloremque eveniet.
+          </p>
+        </div>
+        <div class="about-info">
+          <h2>Kunskap</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laborum repudiandae esse. Delectus eligendi natus maxime iusto optio. Ullam exercitationem molestias in amet doloremque eveniet.
+          </p>
+        </div>
+        <div class="about-info">
+          <h2>Personligt</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laborum repudiandae esse. Delectus eligendi natus maxime iusto optio. Ullam exercitationem molestias in amet doloremque eveniet.
+          </p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -229,9 +219,12 @@
     </div>
   </section>
 
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/smoothscroll.js"></script>
+  <script src="js/smoothscroll.impl.js"></script>
+
+  </script>
 </body>
 
 </html>

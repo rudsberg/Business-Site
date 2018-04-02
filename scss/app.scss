@@ -169,6 +169,26 @@ button {
     width: 100%;
     min-height: 100vh;
   }
+  .row {
+    position: relative;
+  }
+  .learn-more {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    bottom: 15px;
+    p {
+      margin-bottom: 3px !important;
+      color: #eee !important;
+    }
+    a:hover {
+      text-decoration: none;
+    }
+    i {
+      color: $button-color;
+    }
+  }
   .col {
     max-width: 650px;
     position: relative;
@@ -180,7 +200,7 @@ button {
     top: -40px;
   }
   h1 {
-    font-size: 3rem !important;
+    font-size: 2.2rem !important;
     font-weight: 600;
     line-height: 1.35;
   }
@@ -191,6 +211,7 @@ button {
   }
   h2 {
     line-height: 1.5;
+    font-size: 1.1rem;
   }
 }
 
@@ -206,6 +227,9 @@ button {
     padding: 18px 8px 5px 8px;
     border-radius: 8px;
     box-shadow: 7px 7px 15px -10px #a59f9f;
+    h2 {
+      font-size: 1.5rem;
+    }
   }
 
 }
@@ -272,138 +296,31 @@ button {
   }
 }
 
-/* ================== Personal Projects Section ====================== */
+/* ================== About Section ====================== */
 
-#pp-section {
-  background-color: $secondary-color;
-
-  /*
-  .info-header {
-    a {
-      border-bottom: 1px #4288DC dotted;
-      font-weight: 400;
-      position: relative;
-      &:hover {
-        color: $footer-color;
-        text-decoration: none;
-        border-bottom: 1px $footer-color dotted;
-        transition: all ease-in-out 150ms;
-      }
-    }
+#about-section {
+  img {
+    max-width: 280px;
   }
-  */
-  button {
-    border-color: $button-color;
-    color: $footer-color;
-    font-size: 1rem;
-    font-weight: 500;
-    &:hover {
-      color: $button-color;
-      background-color: $footer-color;
-      border-color: $footer-color;
-    }
+  .profile-container {
+    margin: 0 auto !important;
   }
-  a:hover {
-    text-decoration: none !important;
+  .col-lg-4 {
+    text-align: center;
   }
-  .row {
-    position: relative;
-    .col-md-4 {
-      position: relative;
+  .about-info {
+    margin-bottom: 30px;
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
     }
     p {
-      margin-bottom: 60px;
-    }
-    a {
-      position: absolute;
-      display: block;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      text-align: center;
     }
   }
-  .row .col-sm-6 {
-    max-width: 300px;
-    margin: 0 auto;
-  }
-  .holder {
-    margin: 0 auto;
-    width: 230px;
-    height: 230px;
-    border-radius: 10px;
-  }
-  .background {
-    width: 230px;
-    height: 230px;
-    border-radius: 10px;
-    position: relative;
-  }
-  .layer {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-  }
-  #todo-background {
-    background: url('../img/todo.PNG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  #todo-layer {
-    background-color: rgba(37, 42, 48, 0.7);
-  }
-  #particle-background {
-    background: url('../img/canvas.PNG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  #particle-layer {
-    background-color: rgba(95, 146, 203, 0.7);
-  }
-  #schack-background {
-    background: url('../img/schack.PNG');
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  #schack-layer {
-    background-color: rgba(206, 110, 85, 0.7);
-  }
-  #wind-background {
-    background: url('../img/windtunnel.jpg');
-    background-size: 100%;
-    background-repeat: no-repeat;
-  }
-  #wind-layer {
-    background-color: rgba(92, 192, 145, 0.7);
-  }
-  #wind .title {
-    font-size: 1.25rem;
-  }
-  button {
-    max-width: 260px;
-    margin: 0 auto;
-  }
-  .title {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-    font-size: 1.2rem;
-    font-weight: 500;
-  }
-}
-
-/* ================== Skills Section ====================== */
-
-#star-text {
-  font-size: 0.65rem;
-}
-
-#skills-section {
-  background-color: $primary-color;
 }
 
 /* ================== Contact Section ====================== */
@@ -461,21 +378,28 @@ button {
 @media (min-width: 576px) {
   #hero-section {
     h1 {
-      font-size: 1.65rem;
+      font-size: 3rem;
       font-weight: 600;
       line-height: 1.35;
     }
-    span, a {
+    h2 {
+      font-size: 1.35rem;
+    }
+     a {
       font-size: 1.35rem;
       font-weight: 500;
       line-height: 1.35;
     }
-    img {
-      width: 240px;
-    }
+
   }
   #contact-section .info-header {
     max-width: 630px;
+  }
+
+  #about-section {
+    .about-info {
+      max-width: 400px;
+    }
   }
 }
 
@@ -497,6 +421,17 @@ button {
   .service-item {
     max-width: 330px !important;
   }
+
+  #about-section {
+    .about-info {
+      h2 {
+        text-align: left;
+      }
+      p {
+        text-align: left;
+      }
+    }
+  }
 }
 
 @media (min-width: 992px) {
@@ -512,6 +447,12 @@ button {
   }
   #pp-section .title {
     font-size: 1.38rem;
+  }
+  #about-section {
+    img {
+      margin-top: 40px;
+      max-width: 340px;
+    }
   }
 }
 
