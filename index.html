@@ -10,16 +10,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="description" content="Joel Rudsbergs personliga hemsida. Joel Rudsberg är en webbutvecklare och programmerare som letar efter sommarjobb 2018.">
-  <title>Joel Rudsberg | Programmerare</title>
+  <title>Frilans Webbutvecklare | Joel Rudsberg</title>
   <!-- Font Awesome -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- -Montserrat Google Font -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700" rel="stylesheet">
   <link rel="stylesheet" href="css/app.css">
-  <!--Teletype-->
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="js/jquery.teletype.js"></script>
-  <script src="js\teletype.impl.js"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
 
@@ -33,61 +31,80 @@
           <div class="row">
             <div class="col-sm-12 text-left text-white">
               <h1 class="mb-3">Hej! Jag designar och bygger <span class="type-text d-block"></span></h1>
-              <h2 class="mt-4 lead">Jag är en frilansande webbutvecklare baserad i Göteborg som skapar skräddarsydda hemsidor och webbapplikationer åt företag.</h2>
-              <a class="mt-4" href="#contact-section"><button class="btn btn-outline-info btn-lg text-white mt-4">Anlita mig</button></a>
+              <h2 class="mt-4 lead">Jag är en frilansande webbutvecklare baserad i Göteborg som skapar skräddarsydda hemsidor och webbapplikationer.</h2>
+              <a class="mt-4" href="#contact-section"><button class="btn btn-outline-info btn-lg text-white mt-4">Kontakta mig</button></a>
             </div>
-
           </div>
         </div>
       </div>
     </div>
-    <div class="learn-more text-center text-white d-block w-100">
-      <p>Läs om vad jag kan erbjuda</p>
-      <a href="#service-section"><i class="fa fa-chevron-down d-block"></i></a>
+    <div class="learn-more d-block w-100">
+      <a class="text-center text-white" href="#service-section">
+        <p>Läs mer om vad jag kan erbjuda</p>
+        <i class="fa fa-chevron-down d-block"></i>
+      </a>
     </div>
   </section>
 
   <!-- SERVICE SECTION -->
   <section id="service-section" class="pb-4">
     <div class="container">
-      <div class="info-header mb-5 text-center">
+      <div class="info-header mb-4 text-center">
         <h2 class="text-center display-4 d-block pt-5">Tjänster</h2>
-        <p class="mt-4 mb-3 text-center">Jag erbjuder hemsidor som är anpassade för alla enheter, utvecklade med de nyaste webbstandarderna och rankar högt på sökmotorerna. Allt ifrån simpla hemsidor till mer komplicerade webbbutiker erbjuds.</p>
+        <p class="mt-4 mb-3 text-center">Jag erbjuder hemsidor som är anpassade för alla enheter, utvecklade med den senaste webbstandarden och som rankar högt på sökmotorerna. Låt oss ta din idé och göra den till en fullt fungerande slutprodukt.
+
+        <!--Allt ifrån simpla hemsidor till mer komplicerade webbbutiker erbjuds.--></p>
       </div>
-      <div class="row mt-5 pt-4">
-        <div class="service-item col-md-6 offset-lg-3 text-center mb-5">
-          <i class="fa fa-github fa-4x mb-2"></i>
-          <h2 class="mb-2">Wordpressutveckling</h2>
-          <p>
-            <!--
-            Med hjälp av världerns största innehållshanteringssystem designar jag er framtida webbplats. Wordpress gör det möjligt att på egen hand, utan att nudda någon källkod, hantera all sorts innehåll på hemsidan. Behöver du hjälp att förnya funktionalitet på din nuvarande Wordpresshemsida kan även detta genomföras.
-            -->
-            Wordpress gör det möjligt att för dig som kund, utan att nudda källkoden, hantera och underhålla all sorts innehåll på hemsidan.
-          </p>
-        </div>
-        <div class="service-item col-md-6 text-center mb-5">
-          <i class="fa fa-rocket fa-4x mb-2"></i>
-          <h2 class="mb-2">Responsivitet</h2>
-          <p>
-            Sidan tillverkas så att designen, oavsett om en smartphone, tablet eller en laptop används,  aktivt ändras utifrån användarens enhet.
-          </p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="service-item col-md-6 text-center mb-5">
-          <i class="fa fa-twitter fa-4x mb-2"></i>
-          <h2 class="mb-2">Sökoptimering</h2>
-          <p>
-            Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på Google.
-          </p>
+
+      <div class="row mb-5">
+
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="container-fa">
+                <i class="fa fa-wordpress fa-4x type-fa"></i>
+              </div>
+              <h2>Wordpressutveckling</h2>
+              <p>Wordpress gör det möjligt för dig som kund, utan att nudda komplicerad källkod, att hantera och underhålla all sorts innehåll på hemsidan.</p>
+            </div>
+          </div>
         </div>
 
-        <div class="service-item col-md-6 text-center mb-5">
-          <i class="fa fa-twitter fa-4x mb-2"></i>
-          <h2 class="mb-2">Sökoptimering</h2>
-          <p>
-            Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på Google.
-          </p>
+        <div class="col-md-6">
+          <div class="card text-center right">
+            <div class="card-body">
+              <div class="container-fa">
+                <i class="fa fa-mobile fa-4x type-fa"></i>
+              </div>
+              <h2>Responsivitet</h2>
+              <p>Sidan tillverkas så att designen aktivt ändras utifrån användarens enhet, oavsett om det är en smartphone, tablet eller en laptop används.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card text-center">
+            <div class="card-body">
+              <div class="container-fa">
+                <i class="fa fa-search fa-3x type-fa"></i>
+              </div>
+              <h2>Sökoptimering</h2>
+              <p>Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på sökmotorer såsom Google.</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="card text-center right">
+            <div class="card-body">
+              <div class="container-fa">
+                <i class="fa fa-handshake-o fa-3x type-fa"></i>
+              </div>
+              <h2>Extra hjälp</h2>
+              <p>Behöver du eller din webbyrå extra personal i ett projekt så hjälper jag gärna till. Jag gillar att arbeta i grupp och hoppar snabbt in i ert projekt.</p>
+            </div>
+          </div>
         </div>
 
       </div>
@@ -97,7 +114,7 @@
   <!-- PROJECT SECTION -->
   <section id="project-section" class="pb-4">
     <div class="container">
-      <div class="info-header mb-5 text-center">
+      <div class="info-header text-center">
         <h2 class="text-center display-4 d-block pt-5">Tidigare Arbeten</h2>
         <p class="mt-4 text-center">En kollektion av projekt jag jobbat med där slutprodukten dagligen används av företag. Vill ni se mer exempel är ni hjärtligt välkomna att <a href="mailto:rudsberg@live.se" data-tool-tip="Svarar inom en dag!">emaila</a> mig.</p>
       </div>
@@ -110,7 +127,7 @@
         <div class="col-md-6 order-md-1">
           <div id="project-tintin" class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center mx-auto">
             <h3 class="display-4">Café Tintin</h3>
-            <p class="text-muted">Café Tintin har varit ett välkänt café i Göteborg  i 25 år. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
+            <p class="text-muted">Café Tintin har varit ett välkänt café i Göteborg i 25 år. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
             <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-outline-info btn-lg mt-3">Besök Hemsida</button></a>
           </div>
         </div>
@@ -154,50 +171,54 @@
     </div>
   </section>
 
-<!-- SERVICE SECTION -->
-<section id="about-section" class="pb-4">
-  <div class="container">
-    <div class="info-header mb-5 text-center">
-      <h2 class="text-center display-4 d-block pt-5">Om mig</h2>
-      <p class="mb-5"></p>
-    </div>
-    <div class="row mt-4">
-      <div class="col-md-6 mb-5">
-        <div class="profile-container text-center">
-          <img src="img\joel-rudsberg-profilbild.jpg" alt="" class="img-fluid rounded-circle">
+  <!-- SERVICE SECTION -->
+  <section id="about-section" class="pb-4">
+    <div class="container">
+      <div class="info-header mb-5 text-center">
+        <h2 class="text-center display-4 d-block pt-5">Om mig</h2>
+        <p class="mb-5"></p>
+      </div>
+      <div class="row mt-4">
+        <div class="col-md-6 mb-5">
+          <div class="profile-container text-center">
+            <img src="img\joel-rudsberg-profilbild.jpg" alt="Joel Rudsberg profile picture" title="Joel Rudsberg" class="img-fluid rounded-circle">
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="about-info">
+            <h2>Bakgrund</h2>
+            <p>
+              I USA, Florida, läste jag software engineering och blev introducerad till programmeringens värld. De undervisade bland annat analyseringsprogrammet Matlab och OOP i Java. Efter året på andra sidan Atlanten började jag att lära mig webbutveckling på egen hand. Hösten 2018 börjar jag civilingenjörslinjen i IT på Chalmers.
+            </p>
+          </div>
+          <div class="about-info">
+            <h2>Kunskap</h2>
+            <p>
+              Jag har goda kunskaper i HTML5, CSS3, Javascript och ramverket Bootstrap 4. På serversidan använder jag PHP. Har även jobbat lite med MySQL. Wordpress är mitt val av CMS. Förutom webbutvecklingen har jag spenderat mycket tid i Eclipse för att utveckla applikationer med Java och en objektorienterad approach.
+            </p>
+          </div>
+          <div class="about-info">
+            <h2>Personligt</h2>
+            <p>
+              Uppvuxen i skidmeckat Åre har många glada dagar spenderats på skidor. På somrarna är det våg och kitesurf i Portugal som är favoriten. Till gymnasiestart flyttade jag ner till Sveriges framsida för att börja på Katrinelundsgymnasiet med fotbollsinriktning.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="col-md-6">
-        <div class="about-info">
-          <h2>Bakgrund</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laborum repudiandae esse. Delectus eligendi natus maxime iusto optio. Ullam exercitationem molestias in amet doloremque eveniet.
-          </p>
-        </div>
-        <div class="about-info">
-          <h2>Kunskap</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laborum repudiandae esse. Delectus eligendi natus maxime iusto optio. Ullam exercitationem molestias in amet doloremque eveniet.
-          </p>
-        </div>
-        <div class="about-info">
-          <h2>Personligt</h2>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident laborum repudiandae esse. Delectus eligendi natus maxime iusto optio. Ullam exercitationem molestias in amet doloremque eveniet.
-          </p>
-        </div>
-      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- CONTACT SECTION -->
   <section id="contact-section" class="pt-4">
     <div class="container">
       <div class="info-header pb-5 text-center">
         <h2 class="text-center display-4 d-block pt-5">Kontakta Mig</h2>
-        <p id="subtext" class="mt-4 mb-3 text-center lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime esse, maiores doloribus.</p>
-        <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia, officiis!</p>
+        <p id="subtext" class="mt-4 mb-3 text-center">
+          Jag tar för närvarande emot uppdrag och skulle gärna vilja veta mer om ditt projekt.
+        </p>
+        <p class="text-center">
+          Maila mig så planerar vi in ett samtal eller en fika i Göteborg. Tveka inte på att kontakta mig - jag hjälper dig mer än gärna med ditt webbprojekt. Återkommer med svar inom 24 timmar.
+        </p>
         <a href="mailto:rudsberg@live.se"><button class="mt-2 btn btn-lg btn-outline-success mb-3">Maila</button></a>
       </div>
     </div>
@@ -219,8 +240,11 @@
     </div>
   </section>
 
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/jquery.teletype.js"></script>
+  <script src="js\teletype.impl.js"></script>
   <script src="js/smoothscroll.js"></script>
   <script src="js/smoothscroll.impl.js"></script>
 

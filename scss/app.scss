@@ -2,11 +2,8 @@
   Developer: Joel Rudsberg
   Email: rudsberg@live.se
 */
-
 // My custom bootstrap variables
-@import "variables";
-
-// Bootstrap imports
+@import "variables"; // Bootstrap imports
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
@@ -16,40 +13,27 @@
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/tables";
-// @import "../node_modules/bootstrap/scss/forms";
-@import "../node_modules/bootstrap/scss/buttons";
-// @import "../node_modules/bootstrap/scss/transitions";
-@import "../node_modules/bootstrap/scss/dropdown";
-// @import "../node_modules/bootstrap/scss/button-group";
+@import "../node_modules/bootstrap/scss/tables"; // @import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons"; // @import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown"; // @import "../node_modules/bootstrap/scss/button-group";
 // @import "../node_modules/bootstrap/scss/input-group";
 // @import "../node_modules/bootstrap/scss/custom-forms";
 // @import "../node_modules/bootstrap/scss/nav";
 // @import "../node_modules/bootstrap/scss/navbar";
 // @import "../node_modules/bootstrap/scss/card";
 // @import "../node_modules/bootstrap/scss/breadcrumb";
-@import "../node_modules/bootstrap/scss/pagination";
-// @import "../node_modules/bootstrap/scss/badge";
+@import "../node_modules/bootstrap/scss/pagination"; // @import "../node_modules/bootstrap/scss/badge";
 // @import "../node_modules/bootstrap/scss/jumbotron";
 // @import "../node_modules/bootstrap/scss/alert";
 @import "../node_modules/bootstrap/scss/progress";
-@import "../node_modules/bootstrap/scss/media";
-// @import "../node_modules/bootstrap/scss/list-group";
-@import "../node_modules/bootstrap/scss/close";
-// @import "../node_modules/bootstrap/scss/modal";
+@import "../node_modules/bootstrap/scss/media"; // @import "../node_modules/bootstrap/scss/list-group";
+@import "../node_modules/bootstrap/scss/close"; // @import "../node_modules/bootstrap/scss/modal";
 @import "../node_modules/bootstrap/scss/tooltip";
-@import "../node_modules/bootstrap/scss/popover";
-// @import "../node_modules/bootstrap/scss/carousel";
+@import "../node_modules/bootstrap/scss/popover"; // @import "../node_modules/bootstrap/scss/carousel";
 @import "../node_modules/bootstrap/scss/utilities";
 @import "../node_modules/bootstrap/scss/print";
-
-
 // ========================================================== //
-
-
-
 // My custom styles
-
 body {
   font-family: 'Montserrat', sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -80,8 +64,7 @@ a[data-tool-tip]::after {
   color: white;
   border-radius: 7px;
   transform: scale(0);
-  transition: transform ease-out 150ms,
-              bottom ease-out 150ms;
+  transition: transform ease-out 150ms, bottom ease-out 150ms;
 }
 
 a[data-tool-tip]:hover::after {
@@ -93,6 +76,7 @@ button {
   border-radius: 20px !important;
   border-width: 2px !important;
   font-weight: 500 !important;
+
   &:hover {
     transition: all ease-in-out 350ms !important;
     transform: scaleX(1.15) !important;
@@ -103,11 +87,12 @@ button {
 .info-header {
   min-width: 280px;
   max-width: 520px;
-  margin: auto;
-  margin-top: 15px;
+  margin: 15px auto 80px;
+
   p {
     position: relative;
   }
+
   p::after {
     content: '';
     display: block;
@@ -121,7 +106,6 @@ button {
     background-color: $button-color;
   }
 }
-
 
 .info-header h2 {
   font-size: 1.9rem;
@@ -140,9 +124,7 @@ button {
   border-color: $button-color !important;
   color: black !important;
 }
-
 /* ==================== HERO SECTION ==================== */
-
 #hero-section {
   background-image: url("../img/desktop-reduced.jpg");
   background-repeat: no-repeat;
@@ -156,11 +138,13 @@ button {
   button {
     border-color: $button-color;
     color: white;
+
     &:hover {
       color: black !important;
       background-color: $button-color;
     }
   }
+
   .dark-overlay {
     background-color: rgba(0, 0, 0, 0.65);
     position: absolute;
@@ -169,73 +153,162 @@ button {
     width: 100%;
     min-height: 100vh;
   }
+
   .row {
     position: relative;
   }
+
   .learn-more {
     position: absolute;
+    font-size: 1rem;
     left: 0;
     right: 0;
     margin: auto;
-    bottom: 15px;
+    bottom: 30px;
+    //15px;
     p {
+      font-size: 16px;
       margin-bottom: 3px !important;
       color: #eee !important;
     }
+
     a:hover {
       text-decoration: none;
     }
+
     i {
       color: $button-color;
     }
   }
+
   .col {
     max-width: 650px;
     position: relative;
     top: -40px;
   }
+
   .col-sm-12 {
     max-width: 650px;
     position: relative;
     top: -40px;
   }
+
   h1 {
-    font-size: 2.2rem !important;
+    font-size: 1.5rem !important;
     font-weight: 600;
     line-height: 1.35;
   }
-   a {
-    font-size: 1.15rem;
+
+  a {
+    font-size: 0.75rem;
     font-weight: 500;
     line-height: 1.35;
   }
+
   h2 {
     line-height: 1.5;
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 }
-
 /* ================= Service Section ====================== */
+
 #service-section {
   background-color: $primary-color;
 
+  .card {
+    position: relative;
+    max-width: 360px;
+    min-height: 261px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px $secondary-color solid;
+
+    .card-body {
+      position: relative;
+    }
+
+    p {
+      max-width: 320px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h2 {
+      padding-top: 65px;
+      font-size: 1.5rem;
+      margin-bottom: 15px;
+    }
+
+    .container-fa {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: inline-block;
+      width: 95px;
+      height: 95px;
+      padding: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 2px $button-color solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+  }
+
+  /*
   .service-item {
+    position: relative;
     background-color: $subtle-white;
     max-width: 360px;
     margin-left: auto;
     margin-right: auto;
-    padding: 18px 8px 5px 8px;
+    padding: 70px 8px 5px;
+    margin-bottom: 70px;
     border-radius: 8px;
     box-shadow: 7px 7px 15px -10px #a59f9f;
+
     h2 {
       font-size: 1.5rem;
     }
-  }
 
+    .icon {
+      position: absolute;
+      top: -48px;
+      left: 0;
+      right: 0;
+      margin: auto;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      padding: 20px;
+      border-radius: 50%;
+      background-color: white;
+      border: 3px $button-color solid;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      .icon:hover {
+        background-color: $button-color;
+        border: 2px black solid;
+        transition: all ease-in-out 350ms;
+      }
+
+      i {
+        display: inline-block;
+      }
+    }
+  }
+  */
 }
 
-/* ================== Project Section ====================== */
 
+/* ================== Project Section ====================== */
 #project-section {
   background-color: $secondary-color;
 
@@ -243,14 +316,17 @@ button {
     content: open-quote;
     font-size: 1.4em;
   }
+
   blockquote::after {
     content: close-quote;
     font-size: 1.4em;
   }
+
   .info-header {
     a {
       border-bottom: 1px #4288DC dotted;
       font-weight: 400;
+
       &:hover {
         color: $button-color;
         text-decoration: none;
@@ -259,37 +335,46 @@ button {
       }
     }
   }
+
   h3 {
     font-size: 2rem;
     font-weight: 600;
   }
+
   button {
     border-color: $button-color;
     color: $footer-color;
     font-size: 1rem;
     font-weight: 500;
+
     &:hover {
       color: $button-color;
       background-color: $footer-color;
       border-color: $footer-color;
     }
   }
+
   .project-text {
     max-width: 430px;
   }
+
   .project {
-    box-shadow: 0px 24px 3px -24px #ddd;
+    box-shadow: 0 24px 3px -24px #ddd;
   }
+
   .testimony:not(.last-testimony) {
-    box-shadow: 0px 24px 3px -24px #ddd;
+    box-shadow: 0 24px 3px -24px #ddd;
   }
+
   .testimony blockquote {
     max-width: 600px;
     margin: 0 auto;
   }
+
   #testimony {
     box-shadow: none !important;
   }
+
   .testimony img {
     width: 70px;
     height: 70px;
@@ -299,32 +384,39 @@ button {
 /* ================== About Section ====================== */
 
 #about-section {
+  .info-header {
+    margin-bottom: 85px !important;
+  }
+
   img {
     max-width: 280px;
   }
+
   .profile-container {
     margin: 0 auto !important;
-  }
-  .col-lg-4 {
-    text-align: center;
   }
   .about-info {
     margin-bottom: 30px;
     max-width: 320px;
     margin-left: auto;
     margin-right: auto;
+
     h2 {
       font-size: 1.5rem;
       text-align: center;
     }
+
     p {
       text-align: center;
     }
   }
 }
 
-/* ================== Contact Section ====================== */
 
+
+
+
+/* ================== Contact Section ====================== */
 #contact-section {
   background-color: $contact-color;
 
@@ -333,14 +425,22 @@ button {
     max-width: 600;
     margin: auto;
     border-bottom: none;
+
     h2 {
       font-size: 2.6rem;
       font-weight: 600;
     }
+
+    p {
+      font-weight: 350;
+      line-height: 1.65;
+    }
+
     button {
       color: #252A30;
       border-color: #252A30;
       width: 170px;
+
       &:hover {
         background-color: #252A30;
         color: #FED766;
@@ -349,18 +449,19 @@ button {
     }
   }
 }
-
 /* ================== Footer Section ====================== */
-
 #footer-section {
   background-color: $footer-color;
+
   .row .d-flex {
     max-width: 120px;
     margin-left: auto;
     margin-right: auto;
   }
+
   i {
     color: #A6A8AA;
+
     &:hover {
       color: white;
       transition: all ease-in-out 300ms;
@@ -368,30 +469,48 @@ button {
     }
   }
 }
-
 @media (min-width: 400px) {
   .info-header h2 {
     font-size: 2.4rem;
   }
 }
-
 @media (min-width: 576px) {
+  /*
+  h1 {
+    font-size: 2rem !important;
+    font-weight: 600;
+    line-height: 1.35;
+  }
+
+  a {
+    font-size: 1.15rem;
+    font-weight: 500;
+    line-height: 1.35;
+  }
+
+  h2 {
+    line-height: 1.5;
+    font-size: 1.1rem;
+  }
+  */
   #hero-section {
     h1 {
       font-size: 3rem;
       font-weight: 600;
       line-height: 1.35;
     }
+
     h2 {
       font-size: 1.35rem;
     }
-     a {
+
+    a {
       font-size: 1.35rem;
       font-weight: 500;
       line-height: 1.35;
     }
-
   }
+
   #contact-section .info-header {
     max-width: 630px;
   }
@@ -402,24 +521,23 @@ button {
     }
   }
 }
-
 @media (min-width: 768px) {
   #project-section {
     #project-tintin {
       margin-right: auto;
       margin-left: initial;
     }
+
     #project-dani {
       margin-left: auto;
       margin-right: initial;
     }
-    .project-text p, .project-text h3, .project-text a {
+
+    .project-text a,
+    .project-text h3,
+    .project-text p {
       text-align: left;
     }
-  }
-
-  .service-item {
-    max-width: 330px !important;
   }
 
   #about-section {
@@ -427,33 +545,63 @@ button {
       h2 {
         text-align: left;
       }
+
       p {
         text-align: left;
       }
     }
   }
 }
-
 @media (min-width: 992px) {
   #hero-section {
     background-size: cover;
     background-attachment: fixed;
+
     .col {
       top: -40px;
     }
+
     .dark-overlay {
       background-color: rgba(0, 0, 0, 0.65);
     }
   }
+
+  #service-section {
+    .card {
+      margin-bottom: 20px;
+    }
+  }
+
   #pp-section .title {
     font-size: 1.38rem;
   }
+
   #about-section {
     img {
-      margin-top: 40px;
       max-width: 340px;
     }
   }
-}
 
-@media (min-width: 1200px) {}
+}
+@media (min-width: 1200px) {
+  .card:nth-child(odd) {
+    left: 40px;
+  }
+
+  #service-section {
+    .right {
+      left: -40px;
+    }
+  }
+
+  #about-section {
+    .col-md-6:nth-child(odd) {
+      position: relative;
+      left: 40px;
+    }
+    .col-md-6:nth-child(even) {
+      position: relative;
+      left: -40px;
+    }
+  }
+}
