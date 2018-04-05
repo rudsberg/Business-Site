@@ -6,10 +6,23 @@
 <html lang="en">
 
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-106855092-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-106855092-2');
+  </script>
+  <link rel="alternate" hreflang="sv" href="alternateURL">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Joel Rudsbergs personliga hemsida. Joel Rudsberg är en webbutvecklare och programmerare som letar efter sommarjobb 2018.">
+  <meta name="description" content="Joel Rudsberg är en webbutvecklare och webbdesigner som frilansar i Göteborg. Tillverkning av moderna och responsiva hemsidor och applikationer erbjuds.">
   <title>Frilans Webbutvecklare | Joel Rudsberg</title>
   <!-- Font Awesome -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -22,6 +35,10 @@
 </head>
 
 <body>
+  <!--CSS Spinner-->
+<div class="spinner-wrapper">
+<div class="spinner"></div>
+</div>
 
   <!-- HERO SECTION -->
   <section id="hero-section">
@@ -53,7 +70,8 @@
         <h2 class="text-center display-4 d-block pt-5">Tjänster</h2>
         <p class="mt-4 mb-3 text-center">Jag erbjuder hemsidor som är anpassade för alla enheter, utvecklade med den senaste webbstandarden och som rankar högt på sökmotorerna. Låt oss ta din idé och göra den till en fullt fungerande slutprodukt.
 
-        <!--Allt ifrån simpla hemsidor till mer komplicerade webbbutiker erbjuds.--></p>
+          <!--Allt ifrån simpla hemsidor till mer komplicerade webbbutiker erbjuds.-->
+        </p>
       </div>
 
       <div class="row mb-5">
@@ -121,7 +139,7 @@
       <div class="row project pb-5 mt-5">
         <div class="col-md-6 order-md-2">
           <div class="d-flex h-100 w-100 flex-column justify-content-center">
-            <a href="http://tintin.coffee" target="_blank"><img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av café tintins hemsida."></a>
+            <a href="http://tintin.coffee" target="_blank"><img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av Café Tintins hemsida."></a>
           </div>
         </div>
         <div class="col-md-6 order-md-1">
@@ -138,7 +156,7 @@
             Joel lyssnade på våra önskemål och skapade med dem en inbjudande och informativ hemsida med de funktioner vi önskade. Han bidrog även med egna idéer och var snabb med att återkoppla!
           </blockquote>
           <div class="pt-3">
-            <img src="img/kira-anderzen.png" class="img-fluid rounded-circle">
+            <img src="img/kira-anderzen.png" class="img-fluid rounded-circle" alt="Profilbild av Kira Anderzén, VD på Café Tintin i Göteborg.">
             <small class="ml-2">Kira Anderzén, VD, Café Tintin</small>
           </div>
         </div>
@@ -152,8 +170,8 @@
         <div class="col-md-6 order-md-2">
           <div id="project-dani" class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center mx-auto">
             <h3 class="display-4">Freeride HQ Engelberg</h3>
-            <p class="text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantaster en bättre upplevelse på Danis hemsida. Sidan kommer publiceras inom några dagar.</p>
-            <a class="disabled" href="http://tintin.coffee/" target="_blank" title="Publiceras om några dagar!"><button class="disabled btn btn-outline-info btn-lg mt-3" disabled>Besök Hemsida</button></a>
+            <p class="text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantaster en bättre upplevelse på Danis hemsida. Sidan kommer publiceras inom kort.</p>
+            <a class="disabled" href="http://tintin.coffee/" target="_blank" title="Publiceras inom kort!"><button class="disabled btn btn-outline-info btn-lg mt-3" disabled>Besök Hemsida</button></a>
           </div>
         </div>
       </div>
@@ -163,7 +181,7 @@
             Joel did quality work by fulfilling me and my clients need for a simple, clear and good-looking website. I'm very satisfied.
           </blockquote>
           <div class="pt-3">
-            <img src="img/dani-friedli.PNG" class="img-fluid rounded-circle">
+            <img src="img/dani-friedli.PNG" class="img-fluid rounded-circle" alt="Profilbild av Dani Friedli, ägare av Okay Shop Engelberg.">
             <small class="ml-2">Dani Friedli, Ägare, Okay Shop</small>
           </div>
         </div>
@@ -181,20 +199,22 @@
       <div class="row mt-4">
         <div class="col-md-6 mb-5">
           <div class="profile-container text-center">
-            <img src="img\joel-rudsberg-profilbild.jpg" alt="Joel Rudsberg profile picture" title="Joel Rudsberg" class="img-fluid rounded-circle">
+            <img src="img\joel-rudsberg-profilbild.jpg" alt="Profilbild av frilansande webbutvecklaren Joel Rudsberg" title="Joel Rudsberg" class="img-fluid rounded-circle">
           </div>
         </div>
         <div class="col-md-6">
           <div class="about-info">
             <h2>Bakgrund</h2>
             <p>
-              I USA, Florida, läste jag software engineering och blev introducerad till programmeringens värld. De undervisade bland annat analyseringsprogrammet Matlab och OOP i Java. Efter året på andra sidan Atlanten började jag att lära mig webbutveckling på egen hand. Hösten 2018 börjar jag civilingenjörslinjen i IT på Chalmers.
+              I USA, Florida, läste jag software engineering och blev introducerad till programmeringens värld. De undervisade bland annat analyseringsprogrammet Matlab och OOP i Java. Efter året på andra sidan Atlanten började jag att lära mig webbutveckling på egen
+              hand. Hösten 2018 börjar jag civilingenjörslinjen i IT på Chalmers.
             </p>
           </div>
           <div class="about-info">
             <h2>Kunskap</h2>
             <p>
-              Jag har goda kunskaper i HTML5, CSS3, Javascript och ramverket Bootstrap 4. På serversidan använder jag PHP. Har även jobbat lite med MySQL. Wordpress är mitt val av CMS. Förutom webbutvecklingen har jag spenderat mycket tid i Eclipse för att utveckla applikationer med Java och en objektorienterad approach.
+              Jag har goda kunskaper i HTML5, CSS3, Javascript och ramverket Bootstrap 4. På serversidan använder jag PHP. Har även jobbat lite med MySQL. Wordpress är mitt val av CMS. Förutom webbutvecklingen har jag spenderat mycket tid i Eclipse för att utveckla
+              applikationer med Java och en objektorienterad approach.
             </p>
           </div>
           <div class="about-info">
@@ -240,6 +260,7 @@
     </div>
   </section>
 
+  <script src="js/spinner.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
