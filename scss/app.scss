@@ -7,13 +7,13 @@
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
-@import "../node_modules/bootstrap/scss/root";
+//@import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
 @import "../node_modules/bootstrap/scss/images";
 @import "../node_modules/bootstrap/scss/code";
 @import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/tables"; // @import "../node_modules/bootstrap/scss/forms";
+//@import "../node_modules/bootstrap/scss/tables"; // @import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/buttons"; // @import "../node_modules/bootstrap/scss/transitions";
 @import "../node_modules/bootstrap/scss/dropdown"; // @import "../node_modules/bootstrap/scss/button-group";
 // @import "../node_modules/bootstrap/scss/input-group";
@@ -22,60 +22,17 @@
 // @import "../node_modules/bootstrap/scss/navbar";
 // @import "../node_modules/bootstrap/scss/card";
 // @import "../node_modules/bootstrap/scss/breadcrumb";
-@import "../node_modules/bootstrap/scss/pagination"; // @import "../node_modules/bootstrap/scss/badge";
+//@import "../node_modules/bootstrap/scss/pagination"; // @import "../node_modules/bootstrap/scss/badge";
 // @import "../node_modules/bootstrap/scss/jumbotron";
 // @import "../node_modules/bootstrap/scss/alert";
-@import "../node_modules/bootstrap/scss/progress";
+//@import "../node_modules/bootstrap/scss/progress";
 @import "../node_modules/bootstrap/scss/media"; // @import "../node_modules/bootstrap/scss/list-group";
-@import "../node_modules/bootstrap/scss/close"; // @import "../node_modules/bootstrap/scss/modal";
-@import "../node_modules/bootstrap/scss/tooltip";
-@import "../node_modules/bootstrap/scss/popover"; // @import "../node_modules/bootstrap/scss/carousel";
+//@import "../node_modules/bootstrap/scss/close"; // @import "../node_modules/bootstrap/scss/modal";
+//@import "../node_modules/bootstrap/scss/tooltip";
+//@import "../node_modules/bootstrap/scss/popover"; // @import "../node_modules/bootstrap/scss/carousel";
 @import "../node_modules/bootstrap/scss/utilities";
-@import "../node_modules/bootstrap/scss/print";
+//@import "../node_modules/bootstrap/scss/print";
 // ========================================================== //
-/* pre loader spinner */
-.spinner {
-  width: 40px;
-  height: 40px;
-  background-color: #333;
-
-  position: absolute;
-  top: 48%;
-  left: 48%;
-  -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
-  animation: sk-rotateplane 1.2s infinite ease-in-out;
-}
-
-@-webkit-keyframes sk-rotateplane {
-  0% { -webkit-transform: perspective(120px) }
-  50% { -webkit-transform: perspective(120px) rotateY(180deg) }
-  100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
-}
-
-@keyframes sk-rotateplane {
-  0% {
-    transform: perspective(120px) rotateX(0deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
-  } 50% {
-    transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
-    -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
-  } 100% {
-    transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-    -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
-  }
-}
-
-.spinner-wrapper {
-position: fixed;
-top: 0;
-left: 0;
-right: 0;
-bottom: 0;
-background-color: #ff6347;
-z-index: 999999;
-}
-
-
 
 // My custom styles
 
@@ -171,7 +128,7 @@ button {
   color: black !important;
 }
 /* ==================== HERO SECTION ==================== */
-#hero-section {
+#hem {
   background-image: url("../img/desktop-reduced.jpg");
   background-repeat: no-repeat;
   /*
@@ -239,7 +196,7 @@ button {
     top: -40px;
   }
 
-  h1 {
+  .heading {
     font-size: 1.5rem !important;
     font-weight: 600;
     line-height: 1.35;
@@ -251,14 +208,14 @@ button {
     line-height: 1.35;
   }
 
-  h2 {
+  h1 {
     line-height: 1.5;
     font-size: 1rem;
   }
 }
 /* ================= Service Section ====================== */
 
-#service-section {
+#tjanster {
   background-color: $primary-color;
 
   .card {
@@ -355,7 +312,7 @@ button {
 
 
 /* ================== Project Section ====================== */
-#project-section {
+#uppdrag {
   background-color: $secondary-color;
 
   blockquote::before {
@@ -429,7 +386,7 @@ button {
 
 /* ================== About Section ====================== */
 
-#about-section {
+#om {
   .info-header {
     margin-bottom: 85px !important;
   }
@@ -463,7 +420,7 @@ button {
 
 
 /* ================== Contact Section ====================== */
-#contact-section {
+#kontakt {
   background-color: $contact-color;
 
   .info-header {
@@ -496,7 +453,7 @@ button {
   }
 }
 /* ================== Footer Section ====================== */
-#footer-section {
+#footer {
   background-color: $footer-color;
 
   .row .d-flex {
@@ -539,14 +496,14 @@ button {
     font-size: 1.1rem;
   }
   */
-  #hero-section {
-    h1 {
+  #hem {
+    .heading {
       font-size: 3rem;
       font-weight: 600;
       line-height: 1.35;
     }
 
-    h2 {
+    h1 {
       font-size: 1.35rem;
     }
 
@@ -557,18 +514,18 @@ button {
     }
   }
 
-  #contact-section .info-header {
+  #kontakt .info-header {
     max-width: 630px;
   }
 
-  #about-section {
+  #om {
     .about-info {
       max-width: 400px;
     }
   }
 }
 @media (min-width: 768px) {
-  #project-section {
+  #uppdrag {
     #project-tintin {
       margin-right: auto;
       margin-left: initial;
@@ -586,7 +543,7 @@ button {
     }
   }
 
-  #about-section {
+  #om {
     .about-info {
       h2 {
         text-align: left;
@@ -599,7 +556,7 @@ button {
   }
 }
 @media (min-width: 992px) {
-  #hero-section {
+  #hem {
     background-size: cover;
     background-attachment: fixed;
 
@@ -612,7 +569,7 @@ button {
     }
   }
 
-  #service-section {
+  #tjanster {
     .card {
       margin-bottom: 20px;
     }
@@ -622,7 +579,7 @@ button {
     font-size: 1.38rem;
   }
 
-  #about-section {
+  #om {
     img {
       max-width: 340px;
     }
@@ -634,13 +591,13 @@ button {
     left: 40px;
   }
 
-  #service-section {
+  #tjanster {
     .right {
       left: -40px;
     }
   }
 
-  #about-section {
+  #om {
     .col-md-6:nth-child(odd) {
       position: relative;
       left: 40px;

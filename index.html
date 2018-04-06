@@ -3,7 +3,7 @@
   Developer: Joel Rudsberg
   Email: rudsberg@live.se
 -->
-<html lang="en">
+<html lang="en" itemscope itemtype="https://schema.org/WebPage">
 
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -18,12 +18,19 @@
 
     gtag('config', 'UA-106855092-2');
   </script>
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
   <link rel="alternate" hreflang="sv" href="alternateURL">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="Joel Rudsberg är en webbutvecklare och webbdesigner som frilansar i Göteborg. Tillverkning av moderna och responsiva hemsidor och applikationer erbjuds.">
-  <title>Frilans Webbutvecklare | Joel Rudsberg</title>
+  <meta name="description" content="Joel Rudsberg är en webbutvecklare och webbdesigner som frilansar i Göteborg. Tillverkning av moderna, responsiva hemsidor och applikationer erbjuds. Anlita mig antingen till att bygga din nästa hemsida eller som frilansare till ett webbprojekt hos er webbyrå.">
+  <title>Frilans Webbutvecklare Göteborg | Joel Rudsberg</title>
   <!-- Font Awesome -->
   <link href="css/font-awesome.min.css" rel="stylesheet">
   <!-- -Montserrat Google Font -->
@@ -35,28 +42,24 @@
 </head>
 
 <body>
-  <!--CSS Spinner-->
-<div class="spinner-wrapper">
-<div class="spinner"></div>
-</div>
 
   <!-- HERO SECTION -->
-  <section id="hero-section">
+  <section id="hem">
     <div class="dark-overlay d-flex justify-content-center align-items-center">
       <div class="legend-inner pt-4">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-left text-white">
-              <h1 class="mb-3">Hej! Jag designar och bygger <span class="type-text d-block"></span></h1>
-              <h2 class="mt-4 lead">Jag är en frilansande webbutvecklare baserad i Göteborg som skapar skräddarsydda hemsidor och webbapplikationer.</h2>
-              <a class="mt-4" href="#contact-section"><button class="btn btn-outline-info btn-lg text-white mt-4">Kontakta mig</button></a>
+              <span class="mb-3 heading">Hej! Jag designar och bygger <span class="type-text d-block"></span></span>
+              <h1 class="mt-4 lead">Jag är en frilansande webbutvecklare baserad i Göteborg som skapar skräddarsydda hemsidor och webbapplikationer.</h1>
+              <a class="mt-4" href="#kontakt"><button class="btn btn-outline-info btn-lg text-white mt-4">Kontakta mig</button></a>
             </div>
           </div>
         </div>
       </div>
     </div>
     <div class="learn-more d-block w-100">
-      <a class="text-center text-white" href="#service-section">
+      <a class="text-center text-white" href="#tjanster">
         <p>Läs mer om vad jag kan erbjuda</p>
         <i class="fa fa-chevron-down d-block"></i>
       </a>
@@ -64,13 +67,11 @@
   </section>
 
   <!-- SERVICE SECTION -->
-  <section id="service-section" class="pb-4">
+  <section id="tjanster" class="pb-4" itemscope itemtype ="https://schema.org/Service">
     <div class="container">
       <div class="info-header mb-4 text-center">
-        <h2 class="text-center display-4 d-block pt-5">Tjänster</h2>
-        <p class="mt-4 mb-3 text-center">Jag erbjuder hemsidor som är anpassade för alla enheter, utvecklade med den senaste webbstandarden och som rankar högt på sökmotorerna. Låt oss ta din idé och göra den till en fullt fungerande slutprodukt.
-
-          <!--Allt ifrån simpla hemsidor till mer komplicerade webbbutiker erbjuds.-->
+        <h2 class="text-center d-block pt-5">Tjänster</h2>
+        <p itemprop="description" class="mt-4 mb-3 text-center">Jag erbjuder hemsidor som är anpassade för alla enheter, utvecklade med den senaste webbstandarden och som rankar högt på sökmotorerna. Låt oss ta din idé och göra den till en fullt fungerande slutprodukt.
         </p>
       </div>
 
@@ -82,8 +83,8 @@
               <div class="container-fa">
                 <i class="fa fa-wordpress fa-4x type-fa"></i>
               </div>
-              <h2>Wordpressutveckling</h2>
-              <p>Wordpress gör det möjligt för dig som kund, utan att nudda komplicerad källkod, att hantera och underhålla all sorts innehåll på hemsidan.</p>
+              <h2 itemprop="serviceType">Wordpressutveckling</h2>
+              <p itemprop="description">Wordpress gör det möjligt för dig som kund, utan att nudda komplicerad källkod, att hantera och underhålla all sorts innehåll på hemsidan.</p>
             </div>
           </div>
         </div>
@@ -94,8 +95,8 @@
               <div class="container-fa">
                 <i class="fa fa-mobile fa-4x type-fa"></i>
               </div>
-              <h2>Responsivitet</h2>
-              <p>Sidan tillverkas så att designen aktivt ändras utifrån användarens enhet, oavsett om det är en smartphone, tablet eller en laptop används.</p>
+              <h2 itemprop="serviceType">Responsivitet</h2>
+              <p itemprop="description">Sidan tillverkas så att designen aktivt ändras utifrån användarens enhet, oavsett om det är en smartphone, tablet eller en laptop som används.</p>
             </div>
           </div>
         </div>
@@ -106,8 +107,8 @@
               <div class="container-fa">
                 <i class="fa fa-search fa-3x type-fa"></i>
               </div>
-              <h2>Sökoptimering</h2>
-              <p>Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på sökmotorer såsom Google.</p>
+              <h2 itemprop="serviceType">Sökoptimering</h2>
+              <p itemprop="description">Hemsidan utvecklas med prestanda och användarupplevelsen i fokus - vilket rankar ditt företag högre på sökmotorer såsom Google.</p>
             </div>
           </div>
         </div>
@@ -119,8 +120,8 @@
               <div class="container-fa">
                 <i class="fa fa-handshake-o fa-3x type-fa"></i>
               </div>
-              <h2>Extra hjälp</h2>
-              <p>Behöver du eller din webbyrå extra personal i ett projekt så hjälper jag gärna till. Jag gillar att arbeta i grupp och hoppar snabbt in i ert projekt.</p>
+              <h2 itemprop="serviceType">Extra hjälp</h2>
+              <p itemprop="description">Behöver du eller din webbyrå extra personal i ett projekt så hjälper jag gärna till. Jag gillar att arbeta i grupp och hoppar snabbt in i ert projekt.</p>
             </div>
           </div>
         </div>
@@ -130,96 +131,108 @@
   </section>
 
   <!-- PROJECT SECTION -->
-  <section id="project-section" class="pb-4">
+  <section id="uppdrag" class="pb-4" itemscope itemtype ="https://schema.org/Service">
     <div class="container">
       <div class="info-header text-center">
         <h2 class="text-center display-4 d-block pt-5">Tidigare Arbeten</h2>
         <p class="mt-4 text-center">En kollektion av projekt jag jobbat med där slutprodukten dagligen används av företag. Vill ni se mer exempel är ni hjärtligt välkomna att <a href="mailto:rudsberg@live.se" data-tool-tip="Svarar inom en dag!">emaila</a> mig.</p>
       </div>
-      <div class="row project pb-5 mt-5">
+
+      <!-- Café Tintin -->
+      <div class="row project pb-5 mt-5" itemprop="serviceOutput" itemscope itemtype="http://schema.org/Product">
         <div class="col-md-6 order-md-2">
           <div class="d-flex h-100 w-100 flex-column justify-content-center">
-            <a href="http://tintin.coffee" target="_blank"><img class="img-fluid mx-auto" src="img/mockup-tintin-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av Café Tintins hemsida."></a>
+            <a href="http://tintin.coffee" target="_blank">
+              <meta itemprop="image" content="https://www.joelrudsberg.se/img/tintin-hemsida-webbutveckling.png" />
+              <img class="img-fluid mx-auto" src="img/tintin-hemsida-webbutveckling.png" alt="Responsiv och mobilanpassad hemsida av Café Tintins hemsida.">
+            </a>
           </div>
         </div>
         <div class="col-md-6 order-md-1">
           <div id="project-tintin" class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center mx-auto">
             <h3 class="display-4">Café Tintin</h3>
-            <p class="text-muted">Café Tintin har varit ett välkänt café i Göteborg i 25 år. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
+            <p class="text-muted" itemprop="description">Café Tintin har varit ett välkänt café i Göteborg i 25 år. Tintins föregående hemsida var uråldrad, ej responsibel och gav en medioker användarupplevelse. Med hjälp av Bootstrap handkodade jag Tintins nya ansikte utåt.</p>
             <a href="http://tintin.coffee/" target="_blank"><button class="btn btn-outline-info btn-lg mt-3">Besök Hemsida</button></a>
           </div>
         </div>
       </div>
+
       <div class="row testimony pb-5 pt-5">
         <div class="col text-center py-3">
           <blockquote class="quote blockquote">
             Joel lyssnade på våra önskemål och skapade med dem en inbjudande och informativ hemsida med de funktioner vi önskade. Han bidrog även med egna idéer och var snabb med att återkoppla!
           </blockquote>
-          <div class="pt-3">
+          <div class="pt-3" itemscope itemtype="http://schema.org/Person">
             <img src="img/kira-anderzen.png" class="img-fluid rounded-circle" alt="Profilbild av Kira Anderzén, VD på Café Tintin i Göteborg.">
-            <small class="ml-2">Kira Anderzén, VD, Café Tintin</small>
+            <small class="ml-2" itemprop="name">Kira Anderzén, VD, Café Tintin</small>
           </div>
         </div>
       </div>
-      <div class="row project pb-5 mt-5">
+
+      <!-- Okay Shop -->
+      <div class="row project pb-5 mt-5" itemprop="serviceOutput" itemscope itemtype="http://schema.org/Product">
         <div class="col-md-6 order-md-1">
           <div class="d-flex h-100 w-100 flex-column justify-content-center">
-            <img class="mb-3 img-fluid mx-auto" src="img/mockup-okayshop-large-transparent.png" alt="Responsiv och mobilanpassad hemsida av okay shops hemsida.">
+            <a href="#">
+              <meta itemprop="image" content="https://www.joelrudsberg.se/img/okayshop-hemsida-webbutveckling.png" />
+              <img class="mb-3 img-fluid mx-auto" src="img/okayshop-hemsida-webbutveckling.png" alt="Responsiv och mobilanpassad hemsida av okay shops hemsida.">
+            </a>
           </div>
         </div>
         <div class="col-md-6 order-md-2">
           <div id="project-dani" class="project-text d-flex h-100 w-100 flex-column justify-content-center text-center mx-auto">
             <h3 class="display-4">Freeride HQ Engelberg</h3>
-            <p class="text-muted">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantaster en bättre upplevelse på Danis hemsida. Sidan kommer publiceras inom kort.</p>
+            <p class="text-muted" itemprop="description">Även känt som Okay Shop, är en kultförklarad skidbutik i svensktillhållet Engelberg i de Schweiziska alperna. Under min säsong fick jag äran att ge skidfantaster en bättre upplevelse på Danis hemsida. Sidan kommer publiceras inom kort.</p>
             <a class="disabled" href="http://tintin.coffee/" target="_blank" title="Publiceras inom kort!"><button class="disabled btn btn-outline-info btn-lg mt-3" disabled>Besök Hemsida</button></a>
           </div>
         </div>
       </div>
-      <div class="row testimony last-testimony pb-5 pt-5">
+
+      <div class="row testimony last-testimony pb-5 pt-5" itemscope>
         <div class="col text-center py-3">
           <blockquote class="quote blockquote">
             Joel did quality work by fulfilling me and my clients need for a simple, clear and good-looking website. I'm very satisfied.
           </blockquote>
-          <div class="pt-3">
+          <div class="pt-3" itemscope itemtype="http://schema.org/Person">
             <img src="img/dani-friedli.PNG" class="img-fluid rounded-circle" alt="Profilbild av Dani Friedli, ägare av Okay Shop Engelberg.">
-            <small class="ml-2">Dani Friedli, Ägare, Okay Shop</small>
+            <small class="ml-2" itemprop="name">Dani Friedli, Ägare, Okay Shop</small>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICE SECTION -->
-  <section id="about-section" class="pb-4">
+  <!-- About SECTION -->
+  <section id="om" class="pb-4" itemscope itemtype="http://schema.org/AboutPage">
     <div class="container">
       <div class="info-header mb-5 text-center">
-        <h2 class="text-center display-4 d-block pt-5">Om mig</h2>
+        <h2 class="text-center display-4 d-block pt-5" itemprop="name">Om mig</h2>
         <p class="mb-5"></p>
       </div>
       <div class="row mt-4">
         <div class="col-md-6 mb-5">
           <div class="profile-container text-center">
-            <img src="img\joel-rudsberg-profilbild.jpg" alt="Profilbild av frilansande webbutvecklaren Joel Rudsberg" title="Joel Rudsberg" class="img-fluid rounded-circle">
+            <img src="img\joel-rudsberg-frilans-webbutvecklare-göteborg.jpg" alt="Profilbild av frilansande webbutvecklaren Joel Rudsberg" title="Joel Rudsberg" class="img-fluid rounded-circle">
           </div>
         </div>
         <div class="col-md-6">
           <div class="about-info">
-            <h2>Bakgrund</h2>
-            <p>
+            <h2 itemprop="name">Bakgrund</h2>
+            <p itemprop="description">
               I USA, Florida, läste jag software engineering och blev introducerad till programmeringens värld. De undervisade bland annat analyseringsprogrammet Matlab och OOP i Java. Efter året på andra sidan Atlanten började jag att lära mig webbutveckling på egen
               hand. Hösten 2018 börjar jag civilingenjörslinjen i IT på Chalmers.
             </p>
           </div>
           <div class="about-info">
-            <h2>Kunskap</h2>
-            <p>
+            <h2 itemprop="name">Kunskap</h2>
+            <p itemprop="description">
               Jag har goda kunskaper i HTML5, CSS3, Javascript och ramverket Bootstrap 4. På serversidan använder jag PHP. Har även jobbat lite med MySQL. Wordpress är mitt val av CMS. Förutom webbutvecklingen har jag spenderat mycket tid i Eclipse för att utveckla
               applikationer med Java och en objektorienterad approach.
             </p>
           </div>
           <div class="about-info">
-            <h2>Personligt</h2>
-            <p>
+            <h2 itemprop="name">Personligt</h2>
+            <p itemprop="description">
               Uppvuxen i skidmeckat Åre har många glada dagar spenderats på skidor. På somrarna är det våg och kitesurf i Portugal som är favoriten. Till gymnasiestart flyttade jag ner till Sveriges framsida för att börja på Katrinelundsgymnasiet med fotbollsinriktning.
             </p>
           </div>
@@ -229,14 +242,14 @@
   </section>
 
   <!-- CONTACT SECTION -->
-  <section id="contact-section" class="pt-4">
+  <section id="kontakt" class="pt-4" itemscope itemtype="http://schema.org/ContactPage">
     <div class="container">
       <div class="info-header pb-5 text-center">
-        <h2 class="text-center display-4 d-block pt-5">Kontakta Mig</h2>
-        <p id="subtext" class="mt-4 mb-3 text-center">
+        <h2 class="text-center display-4 d-block pt-5" itemprop="name">Kontakta Mig</h2>
+        <p id="subtext" class="mt-4 mb-3 text-center" itemprop="description">
           Jag tar för närvarande emot uppdrag och skulle gärna vilja veta mer om ditt projekt.
         </p>
-        <p class="text-center">
+        <p class="text-center" itemprop="description">
           Maila mig så planerar vi in ett samtal eller en fika i Göteborg. Tveka inte på att kontakta mig - jag hjälper dig mer än gärna med ditt webbprojekt. Återkommer med svar inom 24 timmar.
         </p>
         <a href="mailto:rudsberg@live.se"><button class="mt-2 btn btn-lg btn-outline-success mb-3">Maila</button></a>
@@ -245,7 +258,7 @@
   </section>
 
   <!-- FOOTER SECTION -->
-  <section id="footer-section" class="py-4">
+  <footer id="footer" class="py-4">
     <div class="container">
       <div class="row text-center mt-5">
         <div class="col text-white">
@@ -258,9 +271,8 @@
         </div>
       </div>
     </div>
-  </section>
+  </footer>
 
-  <script src="js/spinner.js"></script>
   <script src="node_modules/jquery/dist/jquery.min.js"></script>
   <script src="node_modules/popper.js/dist/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -269,7 +281,6 @@
   <script src="js/smoothscroll.js"></script>
   <script src="js/smoothscroll.impl.js"></script>
 
-  </script>
 </body>
 
 </html>
