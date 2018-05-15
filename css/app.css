@@ -2,12 +2,6 @@
   Developer: Joel Rudsberg
   Email: rudsberg@live.se
 */
-
-#tjanster .info-header h2 {
-    color: red !important;
-  }
-
-
 *,
 *::before,
 *::after {
