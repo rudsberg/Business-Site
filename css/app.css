@@ -4300,6 +4300,12 @@ button {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto; }
+  #om .about-info a {
+    color: #FED766; }
+  #om .about-info a:hover {
+    color: black;
+    transition: all ease-in-out 380ms;
+    text-decoration: none; }
   #om .about-info h2 {
     font-size: 1.5rem;
     text-align: center; }

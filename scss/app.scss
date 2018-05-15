@@ -404,6 +404,16 @@ button {
     margin-left: auto;
     margin-right: auto;
 
+    a {
+      color: $button-color;
+    }
+
+    a:hover {
+      color: black;
+      transition: all ease-in-out 380ms;
+      text-decoration: none;
+    }
+
     h2 {
       font-size: 1.5rem;
       text-align: center;
